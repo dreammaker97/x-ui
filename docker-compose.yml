@@ -1,0 +1,16 @@
+version: "3"
+services:
+  name:
+    container_name: x-ui
+    image: enwaiax/x-ui
+    ports:
+      - "54321:54321"
+      - "80:80/tcp"
+      - "80:80/udp"
+      - "10000:10000/tcp"
+      - "10000:10000/udp"
+    tmpfs:
+      - /tmp
+      - /run
+      - /run/lock
+    restart: always
