@@ -9,8 +9,6 @@ services:
       - "80:80/udp"
       - "10000:10000/tcp"
       - "10000:10000/udp"
-    dns:
-      - 127.0.0.1
     tmpfs:
       - /tmp
       - /run
