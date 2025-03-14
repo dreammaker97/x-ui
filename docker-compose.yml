@@ -15,4 +15,6 @@ services:
       - /tmp
       - /run
       - /run/lock
+    volumes:
+      - ./cert/:/root/cert/  # Chứng chỉ SSL
     restart: unless-stopped
