@@ -2,9 +2,9 @@ version: "3"
 services:
   x-ui:
     container_name: x-ui
-    image: enwaiax/x-ui
+    image: enwaiax/x-ui # ghcr.io/mhsanaei/3x-ui:latest
     ports:
-      - "54321:54321"
+      - "54321:54321"  # "54321:2053"
       - "80:80/tcp"
       - "80:80/udp"
       - "10000:10000/tcp"
